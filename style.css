@@ -120,6 +120,14 @@ nav {
     color: #fff;
 }
 
+/* For responsive  */
+.hamberg-icon{
+    background-color: yellow;
+    color: white;
+    display: none;
+    font-size: 1.5vw;
+}
+
 /* navbaar done */
 
 
@@ -365,6 +373,7 @@ nav {
     padding: 1.3vw;
     margin-top: 3%;
     display: flex;
+    /* flex-wrap: wrap;     */
     gap: 1vw;
     border: .08px solid #ffffff3d;
     /* border: 0.08vw solid rgba(255,255,255,0.05); */
@@ -377,6 +386,7 @@ nav {
 .left-section{
     width: 50%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     gap: 1vw;
 }
@@ -882,3 +892,21 @@ nav {
     transition: cubic-bezier(0.19, 1, 0.22, 1) .5s;
     opacity: 1;
 }
+
+
+
+@media (max-width: 768px){
+
+    .nav-links{
+        display: none;
+    }
+    .user-profile{
+        display: none;
+    }
+    .hamberg-icon{
+        display: block;
+        background-color: transparent;
+    }
+    
+}
+
